@@ -85,7 +85,7 @@ The service-cloud-connector uses a [build.properties](../../settings/sfsc/salesf
 1. Duplicate the [build.properties.sample](../../settings/sfsc/salesforce_ant_48.0/build.properties.sample) file found in the [salesforce_ant_48.0](../../settings/sfsc/salesforce_ant_48.0) directory.
 1. Rename the copy of the build.properties.sample file to build.properties.
 1. Open the newly created build.properties file.
-1. Uncomment line 11, and replace it with the Administrator Account username for the Salesforce instance where the Service Cloud Connector is deployed.
+1. Uncomment line 5, and replace it with the Administrator Account username for the Salesforce instance where the Service Cloud Connector is deployed.
 	
 	```
 	# Manual Deployment: Configuration Step 1
@@ -99,11 +99,11 @@ The service-cloud-connector uses a [build.properties](../../settings/sfsc/salesf
 
 	> This should be deployed leveraging a user account that is different from the SCC Integration User.
 
-1. Uncomment line 12, and replace it with the Administrator Account's password and [Security Token](https://help.salesforce.com/articleView?id=user_security_token.htm&type=5).
+1. Uncomment line 6, and replace it with the Administrator Account's password and [Security Token](https://help.salesforce.com/articleView?id=user_security_token.htm&type=5).
 
 	> For guidance on how to reset your Security Token, visit the section of this document titled [Reset Your Security Token](#reset-your-security-token).
 
-1. Uncomment line 27, and replace it with the authentication URL for your Salesforce instance. If you are unsure of what authentication URL to use,  visit [What are Salesforce instances?](https://success.salesforce.com/answers?id=90630000000gugYAAQ) and [How to identify the type of Salesforce Org](https://salesforce.stackexchange.com/questions/50/can-we-determine-if-the-salesforce-instance-is-production-org-or-a-sandbox-org).  These pages explain how to determine your instance-type and the authentication URL to use.
+1. Uncomment line 14, and replace it with the authentication URL for your Salesforce instance. If you are unsure of what authentication URL to use,  visit [What are Salesforce instances?](https://success.salesforce.com/answers?id=90630000000gugYAAQ) and [How to identify the type of Salesforce Org](https://salesforce.stackexchange.com/questions/50/can-we-determine-if-the-salesforce-instance-is-production-org-or-a-sandbox-org).  These pages explain how to determine your instance-type and the authentication URL to use.
 
 	```
 	# Manual Deployment: Configuration Step 2
